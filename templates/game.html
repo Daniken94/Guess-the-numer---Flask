@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block container %}
+<h1>Welcome to game "GUESS THE NUMBER"</h1>
+<h3>Type number</h3>
+<form method="POST">
+    <input name="guess"/>
+    <input type="submit"/>
+</form>
+<p>
+    {{ message }}
+</p>
+{% endblock %}
+
+</html>

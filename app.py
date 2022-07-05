@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import random
 
+
 app = Flask(__name__)
 
 
@@ -24,7 +25,7 @@ def guess():
             if counter == 3:
                 message = "You failed"
                 return render_template("game_over.html", message=message)
-    return render_template("base.html", message=message)
+    return render_template("game.html", message=message)
 
 
 if __name__ == '__main__':
